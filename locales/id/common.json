@@ -1,0 +1,12 @@
+{
+  "home": "Utama",
+  "type": "Tipe Pokemon",
+  "weight": "Berat",
+  "height": "Tinggi",
+  "abilities": "Kemampuan",
+  "pokemonType": "Tipe",
+  "detail": "Detail lebih lanjut",
+  "other": "Gambar Lain",
+  "stats": "Statistik",
+  "evolution": "Evolusi"
+}

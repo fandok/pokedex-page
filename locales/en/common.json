@@ -1,0 +1,12 @@
+{
+  "home": "Home",
+  "type": "Pokemon Type",
+  "weight": "Weight",
+  "height": "Height",
+  "abilities": "Abilities",
+  "pokemonType": "Type",
+  "detail": "More Detail",
+  "other": "Other Images",
+  "stats": "Stats",
+  "evolution": "Evolution"
+}
