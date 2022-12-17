@@ -13,6 +13,7 @@ import {
 import useAxios from "axios-hooks";
 import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { POKEMON_TYPE_COLORS } from "../../constants";
 import { PokemonDetailInterface, PokemonDetailResponse } from "./types";
 
@@ -28,6 +29,7 @@ const bgColor = [
 const evolutionBgColor = ["#01B956", "#E6AB09", "#E66D00", "#DE2C2C"];
 
 const PokemonDetail = ({ isDetailPage, url }: PokemonDetailInterface) => {
+  const router = useRouter();
   const [{ data }] = useAxios<PokemonDetailResponse>(url);
   const { t } = useTranslation("common");
 
@@ -127,6 +129,9 @@ const PokemonDetail = ({ isDetailPage, url }: PokemonDetailInterface) => {
             <Stack direction="row" spacing={1}>
               {types.map((type) => (
                 <Chip
+                  onClick={() => {
+                    router.push(`/type/${type.type.name}`);
+                  }}
                   key={type.slot}
                   sx={{
                     fontSize: "20px",
