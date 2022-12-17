@@ -1,10 +1,10 @@
 import { Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import useTranslation from "next-translate/useTranslation";
 
 import imgPokemon from "../../../public/assets/pokemon-logo.png";
 import { NavigationInterface } from "./types";
-import useTranslation from "next-translate/useTranslation";
 
 const Navigation = ({ active }: NavigationInterface) => {
   const router = useRouter();
