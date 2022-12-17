@@ -11,10 +11,10 @@ import {
   Typography,
 } from "@mui/material";
 import useAxios from "axios-hooks";
+import useTranslation from "next-translate/useTranslation";
 import Image from "next/image";
 import { POKEMON_TYPE_COLORS } from "../../constants";
 import { PokemonDetailInterface, PokemonDetailResponse } from "./types";
-import useTranslation from "next-translate/useTranslation";
 
 const bgColor = [
   "#0571A6",

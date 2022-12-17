@@ -50,6 +50,7 @@ const Home = () => {
         <Stack direction="row" justifyContent="center" spacing="78px">
           <Box sx={{ marginBlock: "auto" }}>
             <Typography
+              data-testid="mainText"
               variant="h1"
               sx={{
                 fontSize: 52,
